@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+        content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no,viewport-fit=cover">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        *::after,
+        *::before {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background: rgb(210, 234, 247);
+        }
+
+        h1 {
+            text-align: center;
+            margin-bottom: 50px;
+        }
+
+        .doraemon {
+            display: flex;
+            justify-content: center;
+        }
+
+        .face {
+            height: 230px;
+            width: 230px;
+            border: 2px solid black;
+            background: rgb(53, 161, 201);
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .face>.head {
+            height: 200px;
+            width: 200px;
+            border: 2px solid black;
+            border-radius: 50%;
+            background: white;
+            z-index: 1;
+        }
+
+        .face>.head>.mouth {
+            width: 170px;
+            height: 85px;
+            border-radius: 0 0 170px 170px;
+            transform: translateY(100px) translateX(14px);
+            background: rgb(177, 22, 53);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .face>.head>.mouth>.tongueLeft {
+            width: 50px;
+            height: 30px;
+            border-radius: 50px 50px 0px 0px;
+            transform: rotate(-45deg);
+            position: absolute;
+            bottom: 14px;
+            left: 31px;
+            background: rgb(202, 37, 51);
+        }
+
+        .face>.head>.mouth>.tongueRight {
+            width: 50px;
+            height: 30px;
+            border-radius: 50px 50px 0px 0px;
+            transform: rotate(45deg);
+            position: absolute;
+            bottom: 14px;
+            right: 32px;
+            background: rgb(202, 37, 51);
+        }
+
+        .face>.head>.mouth>.tongueMid {
+            position: absolute;
+            width: 43px;
+            height: 43px;
+            bottom: -14px;
+            right: 65px;
+            border-radius: 0 0 50px;
+            transform: rotate(45deg);
+            background: rgb(202, 37, 51);
+        }
+
+        .face>.head>.upper {
+            position: relative;
+            display: flex;
+            justify-content: center;
+        }
+
+        .face>.head>.upper>.nose {
+            height: 30px;
+            width: 30px;
+            top: 50px;
+            border: 1px solid black;
+            position: absolute;
+            border-radius: 50%;
+            background: rgb(177, 23, 53);
+        }
+
+        .face>.head>.upper>.nose>.noseWhite {
+            height: 10px;
+            width: 10px;
+            transform: translateX(6px) translateY(4px);
+            border-radius: 50%;
+            background: white;
+        }
+
+        .face>.head>.upper>.nose>.noseWhite::before {
+            content: "";
+            display: block;
+            border-left: 2px solid black;
+            height: 20px;
+            width: 20px;
+            transform: translateX(6px) translateY(25px);
+        }
+
+
+        .face>.head>.upper>.beardLeft {
+            position: absolute;
+            width: 30px;
+            border-bottom: 3px solid black;
+            transform: translateY(60px);
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Doraemon</h1>
+    <div class="doraemon">
+        <div class="face">
+            <div class="head">
+                <div class="upper">
+                    <div class="beardLeft"></div>
+                    <div class="beardRight"></div>
+                    <div class="leftEye"></div>
+                    <div class="rightEye"></div>
+                    <div class="nose">
+                        <div class="noseWhite"></div>
+                    </div>
+                </div>
+                <div class="mouth">
+                    <div class="tongueLeft"></div>
+                    <div class="tongueMid"></div>
+                    <div class="tongueRight"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

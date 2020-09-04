@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+        content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no,viewport-fit=cover">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        *::after,
+        *::before {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background: rgb(210, 234, 247);
+        }
+
+        h1 {
+            text-align: center;
+            margin-bottom: 50px;
+        }
+
+        .doraemon {
+            display: flex;
+            justify-content: center;
+        }
+
+        .face {
+            height: 230px;
+            width: 230px;
+            border: 2px solid black;
+            background: rgb(53, 161, 201);
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .face>.head {
+            height: 200px;
+            width: 200px;
+            border: 2px solid black;
+            border-radius: 50%;
+            background: white;
+            z-index: 1;
+        }
+
+        .face>.head>.mouth {
+            width: 170px;
+            height: 85px;
+            border-radius: 0 0 170px 170px;
+            transform: translateY(100px) translateX(14px);
+            background: rgb(177, 22, 53);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .face>.head>.mouth>.tongueleft {
+            width: 50px;
+            height: 30px;
+            border-radius: 50px 50px 0px 0px;
+            transform: rotate(-45deg);
+            position: absolute;
+            bottom: 14px;
+            left: 31px;
+            background: rgb(202, 37, 51);
+        }
+
+        .face>.head>.mouth>.tongueright {
+            width: 50px;
+            height: 30px;
+            border-radius: 50px 50px 0px 0px;
+            transform: rotate(45deg);
+            position: absolute;
+            bottom: 14px;
+            right: 32px;
+            background: rgb(202, 37, 51);
+        }
+
+        .face>.head>.mouth>.tonguemid {
+            position: absolute;
+            width: 43px;
+            height: 43px;
+            bottom: -14px;
+            right: 65px;
+            border-radius: 0 0 50px;
+            transform: rotate(45deg);
+            background: rgb(202, 37, 51);
+        }
+
+        .face>.head>.upper {
+            position: relative;
+            display: flex;
+            justify-content: center;
+        }
+
+        .face>.head>.upper>.nose {
+            height: 30px;
+            width: 30px;
+            top: 50px;
+            border: 1px solid black;
+            position: absolute;
+
+            border-radius: 50%;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Doraemon</h1>
+    <div class="doraemon">
+        <div class="face">
+            <div class="head">
+                <div class="upper">
+                    <div class="lefteye"></div>
+                    <div class="righteye"></div>
+                    <div class="nose">
+                        <div class="nosewhite"></div>
+                    </div>
+                </div>
+                <div class="mouth">
+                    <div class="tongueleft"></div>
+                    <div class="tonguemid"></div>
+                    <div class="tongueright"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
