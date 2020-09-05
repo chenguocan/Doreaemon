@@ -378,16 +378,7 @@ h1 {
 .Dragonfly>.fly{
     height: 7px;
     width: 100px;
-    transform:translateY(5px) rotateY(45deg);
+    transform:translateY(5px) ;
     background:rgba(162, 171, 176,0.8);
     border-radius: 10px;
-   animation:toFly linear 3s infinite;
-}
-@keyframes toFly{
-    0%{
-        transform:translateY(5px) rotateY(0deg);
-    }
-    100%{
-        transform:translateY(5px) rotateY(180deg);
-    }
 }

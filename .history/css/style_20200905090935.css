@@ -380,8 +380,8 @@ h1 {
     width: 100px;
     transform:translateY(5px) rotateY(45deg);
     background:rgba(162, 171, 176,0.8);
-    border-radius: 10px;
-   animation:toFly linear 3s infinite;
+    border-radius: 3px;
+   animation:toFly linear 10s infinite;
 }
 @keyframes toFly{
     0%{
