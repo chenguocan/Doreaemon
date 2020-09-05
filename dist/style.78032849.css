@@ -1,4 +1,4 @@
-* {
+/* * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -390,6 +390,12 @@ h1 {
     100%{
         transform:translateY(5px) rotateY(180deg);
     }
+} */
+#app{
+    height: 50vh;
+    width:100vw;
+    border:1px solid red;
+    overflow: auto;
 }
 
 /*# sourceMappingURL=/style.78032849.css.map */
