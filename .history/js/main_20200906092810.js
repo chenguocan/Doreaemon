@@ -1,4 +1,10 @@
-/* * {
+new Vue({
+    el: "#app",
+    data: {
+        n: 0,
+        template: `
+<p>
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -390,14 +396,22 @@ h1 {
     100%{
         transform:translateY(5px) rotateY(180deg);
     }
-} */
-#app{
-    height: 50vh;
-    width:100vw;
-    border:1px solid red;
-    overflow: auto;
-}
-#app>pre{
-    font-size: 16px;
-    font-weight: normal;
-}
+} </p>`,
+        t: ""
+    }
+    ,
+    methods: {
+        add() {
+            setInterval(() => {
+                this.n++;
+                this.t = this.template.substr(1, this.n);
+                if (this.t[this.n - 1] === "\n") {
+                    this.t[this.n - 1] = "<br/>"
+                }
+            }, 10)
+        }
+    },
+    created() {
+        this.add();
+    },
+})
