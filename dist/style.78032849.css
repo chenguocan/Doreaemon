@@ -407,15 +407,12 @@ h1 {
 body {
     background: rgb(210, 234, 247);
 }
-
-#app{
+#app>pre{
     height: 35vh;
     width:100vw;
-    overflow: auto;
-}
-#app>pre{
     font-size: 16px;
     font-weight: normal;
+    overflow: auto;
 }
 h1 {
     text-align: center;

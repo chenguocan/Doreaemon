@@ -407,9 +407,13 @@ h1 {
 body {
     background: rgb(210, 234, 247);
 }
-#app>pre{
+
+#app{
     height: 35vh;
     width:100vw;
+}
+#app>pre{
+    border:1px solid red;
     font-size: 16px;
     font-weight: normal;
     overflow: auto;

@@ -407,6 +407,7 @@ h1 {
 body {
     background: rgb(210, 234, 247);
 }
+
 #app>pre{
     height: 35vh;
     width:100vw;

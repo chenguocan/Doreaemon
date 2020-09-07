@@ -407,8 +407,11 @@ h1 {
 body {
     background: rgb(210, 234, 247);
 }
+.doraemon{
+    height: 80vh;
+}
 #app>pre{
-    height: 35vh;
+    height: 20vh;
     width:100vw;
     font-size: 16px;
     font-weight: normal;

@@ -1,24 +1,8 @@
-/* * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-*::after,
-*::before {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-body {
-    background: rgb(210, 234, 247);
-}
-
-h1 {
-    text-align: center;
-    margin-bottom: 50px;
-}
+new Vue({
+    el: "#app",
+    data: {
+        n: 0,
+        template: `
 
 .doraemon {
     display: flex;
@@ -390,31 +374,23 @@ h1 {
     100%{
         transform:translateY(5px) rotateY(180deg);
     }
-} */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-*::after,
-*::before {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-body {
-    background: rgb(210, 234, 247);
-}
-#app>pre{
-    height: 35vh;
-    width:100vw;
-    font-size: 16px;
-    font-weight: normal;
-    overflow: auto;
-}
-h1 {
-    text-align: center;
-    margin-bottom: 50px;
-}
+}`,
+        t: ""
+    }
+    ,
+    methods: {
+        add() {
+            setInterval(() => {
+                this.n++;
+                this.t = this.template.substr(1, this.n);
+            }, 100)
+        }
+    },
+    created() {
+        this.add();
+        console.log(document.querySelector(".pre");
+    },
+    mounted() {
+        console.log(this.$refs.name);
+    }
+})
