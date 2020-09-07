@@ -131,18 +131,19 @@ new Vue({
 
       setInterval(function () {
         var pre = document.querySelector("pre");
-        var y = pre.scrollHeight;
-        pre.scrollTo(0, y);
         _this.n++;
         _this.t = _this.template.substr(1, _this.n);
+
+        if (_this.t[_this.n - 1] === "\n") {
+          var y = pre.scrollHeight;
+          pre.scrollTo(0, y);
+          console.log(y);
+        }
       }, 1);
     }
   },
   created: function created() {
     this.add();
-  },
-  mounted: function mounted() {
-    console.log(this.$refs.name);
   }
 });
 },{}],"node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
@@ -173,7 +174,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "53116" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "56725" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};

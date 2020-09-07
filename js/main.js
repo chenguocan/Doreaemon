@@ -382,10 +382,13 @@ new Vue({
         add() {
             setInterval(() => {
                 let pre = document.querySelector("pre");
-                let y = pre.scrollHeight;
-                pre.scrollTo(0, y);
                 this.n++;
                 this.t = this.template.substr(1, this.n);
+                if(this.t[this.n-1]==="\n"){
+                    let y = pre.scrollHeight;
+                    pre.scrollTo(0, y);
+                    console.log(y);
+                }
             }, 1)
         }
     },
