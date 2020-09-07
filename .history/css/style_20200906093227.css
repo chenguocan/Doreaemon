@@ -409,17 +409,12 @@ body {
 }
 
 #app{
-    height: 35vh;
+    height: 50vh;
     width:100vw;
+    border:1px solid red;
     overflow: auto;
 }
 #app>pre{
     font-size: 16px;
     font-weight: normal;
 }
-h1 {
-    text-align: center;
-    margin-bottom: 50px;
-}
-
-/*# sourceMappingURL=/style.78032849.css.map */

@@ -3,27 +3,6 @@ new Vue({
     data: {
         n: 0,
         template: `
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-*::after,
-*::before {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-body {
-    background: rgb(210, 234, 247);
-}
-
-h1 {
-    text-align: center;
-    margin-bottom: 50px;
-}
 
 .doraemon {
     display: flex;
@@ -404,9 +383,6 @@ h1 {
             setInterval(() => {
                 this.n++;
                 this.t = this.template.substr(1, this.n);
-                if (this.t[this.n - 1] === "\n") {
-                    this.t[this.n - 1] = "<br/>"
-                }
             }, 10)
         }
     },

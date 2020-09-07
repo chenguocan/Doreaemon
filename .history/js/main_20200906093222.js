@@ -1,20 +1,8 @@
-/* * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-*::after,
-*::before {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-body {
-    background: rgb(210, 234, 247);
-}
-
+new Vue({
+    el: "#app",
+    data: {
+        n: 0,
+        template: `
 h1 {
     text-align: center;
     margin-bottom: 50px;
@@ -390,36 +378,22 @@ h1 {
     100%{
         transform:translateY(5px) rotateY(180deg);
     }
-} */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-*::after,
-*::before {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-body {
-    background: rgb(210, 234, 247);
-}
-
-#app{
-    height: 35vh;
-    width:100vw;
-    overflow: auto;
-}
-#app>pre{
-    font-size: 16px;
-    font-weight: normal;
-}
-h1 {
-    text-align: center;
-    margin-bottom: 50px;
-}
-
-/*# sourceMappingURL=/style.78032849.css.map */
+}`,
+        t: ""
+    }
+    ,
+    methods: {
+        add() {
+            setInterval(() => {
+                this.n++;
+                this.t = this.template.substr(1, this.n);
+                if (this.t[this.n - 1] === "\n") {
+                    this.t[this.n - 1] = "<br/>"
+                }
+            }, 10)
+        }
+    },
+    created() {
+        this.add();
+    },
+})
