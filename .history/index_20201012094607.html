@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+        content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no,viewport-fit=cover">
+    <title>Doraemon</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        @media (max-width:500px) {
+            .doraemon {
+                display: flex;
+            }
+        }
+
+        *::after {
+            box-sizing: border-box;
+        }
+
+        *::before {
+            box-sizing: border-box;
+        }
+
+        #demo2 {
+            display: none;
+        }
+
+        #demo {
+            position: fixed;
+            height: 50vh;
+            top: 0;
+            left: 0;
+            width: 100%;
+            overflow-y: auto;
+        }
+
+        #demo::-webkit-scrollbar {
+            display: none;
+        }
+
+        #html {
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            height: 50vh;
+        }
+
+        #buttons {
+            position: fixed;
+            display: flex;
+            flex-direction: column;
+            z-index: 10;
+            margin-top: 10px;
+            margin-right: 10px;
+            top: 0;
+            right: 0;
+        }
+
+        #buttons>button {
+            padding: 5px;
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="demo"></div>
+    <style id="demo2"></style>
+    <div id="buttons">
+        <button id="btnPause">暂停</button>
+        <button id="btnPlay">播放</button>
+        <button id="btnSlow">慢速</button>
+        <button id="btnNormal">中速</button>
+        <button id="btnFast">快速</button>
+    </div>
+    <div class="doraemon">
+        <div class="Dragonfly">
+            <div class="platform"></div>
+            <div class="fly"></div>
+            <div class="sustain"></div>
+        </div>
+        <div class="face">
+            <div class="head">
+                <div class="upper">
+                    <div class="beardLeft"></div>
+                    <div class="beardRight"></div>
+                    <div class="leftEye">
+                        <div class="eye1"></div>
+                    </div>
+                    <div class="rightEye">
+                        <div class="eye2"></div>
+                    </div>
+                    <div class="nose">
+                        <div class="noseWhite"></div>
+                    </div>
+                </div>
+                <div class="mouth">
+                    <div class="tongueLeft"></div>
+                    <div class="tongueMid"></div>
+                    <div class="tongueRight"></div>
+                </div>
+            </div>
+        </div>
+        <div class="body">
+            <div class="armLeft"></div>
+            <div class="armRight"></div>
+            <div class="handLeft"></div>
+            <div class="handRight"></div>
+            <div class="redScarf"></div>
+            <div class="pocket">
+                <div class="bag"></div>
+            </div>
+            <div class="bell"></div>
+
+        </div>
+        <div class="foot">
+            <div class="footLeft"></div>
+            <div class="footRight"></div>
+        </div>
+    </div>
+    <script src="./js/main.js"></script>
+</body>
+
+</html>

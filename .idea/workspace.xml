@@ -1,15 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="fa5ed304-5789-41ad-b8b5-867026a230a3" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.cache/00/aaae9f1a81ace88f10a2283f209e78.json" beforeDir="false" afterPath="$PROJECT_DIR$/.cache/00/aaae9f1a81ace88f10a2283f209e78.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.cache/43/a574349c3b9ffd76b65826abf35797.json" beforeDir="false" afterPath="$PROJECT_DIR$/.cache/43/a574349c3b9ffd76b65826abf35797.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.cache/a0/beba895f5393e2db85858e79c993e7.json" beforeDir="false" afterPath="$PROJECT_DIR$/.cache/a0/beba895f5393e2db85858e79c993e7.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.cache/c0/23cca9eafb2f87ac70d88fc01ab2b1.json" beforeDir="false" afterPath="$PROJECT_DIR$/.cache/c0/23cca9eafb2f87ac70d88fc01ab2b1.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/style.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/dist/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/dist/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/dist/main.fb6bbcaf.js" beforeDir="false" afterPath="$PROJECT_DIR$/dist/main.fb6bbcaf.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/dist/main.fb6bbcaf.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/dist/main.fb6bbcaf.js.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/style.78032849.css" beforeDir="false" afterPath="$PROJECT_DIR$/dist/style.78032849.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/style.78032849.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/dist/style.78032849.css.map" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/dist/style.78032849.js" beforeDir="false" afterPath="$PROJECT_DIR$/dist/style.78032849.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/js/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/main.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -28,7 +36,7 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../旺财记账" />
     <property name="nodejs_package_manager_path" value="npm" />
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -41,7 +49,10 @@
       <updated>1599438655776</updated>
       <workItem from="1599438656952" duration="1127000" />
       <workItem from="1599441460804" duration="15000" />
-      <workItem from="1599458525987" duration="271000" />
+      <workItem from="1599458525987" duration="3251000" />
+      <workItem from="1599461948463" duration="3000" />
+      <workItem from="1599462474843" duration="6000" />
+      <workItem from="1599466840729" duration="12000" />
     </task>
     <servers />
   </component>
@@ -49,13 +60,13 @@
     <option name="version" value="3" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="469" y="249" key="FileChooserDialogImpl" timestamp="1599441473487">
+    <state x="469" y="249" key="FileChooserDialogImpl" timestamp="1599466850523">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="469" y="249" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1599441473487" />
-    <state x="566" y="145" key="search.everywhere.popup" timestamp="1599439055325">
+    <state x="469" y="249" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1599466850523" />
+    <state x="566" y="146" width="672" height="678" key="search.everywhere.popup" timestamp="1599460217035">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="566" y="145" key="search.everywhere.popup/0.0.1536.824@0.0.1536.824" timestamp="1599439055325" />
+    <state x="566" y="146" width="672" height="678" key="search.everywhere.popup/0.0.1536.824@0.0.1536.824" timestamp="1599460217035" />
   </component>
 </project>
